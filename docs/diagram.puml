@@ -1,0 +1,19 @@
+@startuml
+
+class Parking {
+    countPlaces
+}
+
+class User {
+    radius
+}
+
+class Map{
+    address
+    getRoute()
+    setAddress()
+}
+
+User -> Map : sets address
+Map --> Parking : finds
+@enduml
